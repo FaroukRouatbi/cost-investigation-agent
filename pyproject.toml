@@ -1,0 +1,38 @@
+[project]
+name = "cost-investigation-agent"
+version = "0.1.0"
+description = "Autonomous agent that investigates AWS cost spikes"
+readme = "README.md"
+authors = [
+    { name = "Farouk", email = "farouk.rouatbi@medtech.tn" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic-settings>=2.16.2",
+    "structlog>=26.1.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.mypy]
+strict = true
+python_version = "3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
