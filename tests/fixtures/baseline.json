@@ -1,0 +1,16 @@
+{
+  "ResultsByTime": [
+    {
+      "TimePeriod": {"Start": "2026-10-01", "End": "2026-11-01"},
+      "Total": {},
+      "Groups": [
+        {"Keys": ["Amazon EC2"], "Metrics": {"UnblendedCost": {"Amount": "120.50", "Unit": "USD"}}},
+        {"Keys": ["Amazon RDS Service"], "Metrics": {"UnblendedCost": {"Amount": "80.00", "Unit": "USD"}}},
+        {"Keys": ["AWS Lambda"], "Metrics": {"UnblendedCost": {"Amount": "5.25", "Unit": "USD"}}},
+        {"Keys": ["Amazon S3"], "Metrics": {"UnblendedCost": {"Amount": "2.10", "Unit": "USD"}}}
+      ],
+      "Estimated": false
+    }
+  ],
+  "DimensionValueAttributes": []
+}
