@@ -1,0 +1,25 @@
+{
+  "Reservations": [
+    {
+      "Instances": [
+        {
+          "InstanceId": "i-0aaa1111bbb222333",
+          "InstanceType": "m5.large",
+          "State": {"Name": "running"},
+          "Tags": [
+            {"Key": "team", "Value": "search"},
+            {"Key": "Name", "Value": "search-api-1"}
+          ]
+        },
+        {
+          "InstanceId": "i-0ccc4444ddd555666",
+          "InstanceType": "t3.micro",
+          "State": {"Name": "stopped"},
+          "Tags": [
+            {"Key": "team", "Value": "search"}
+          ]
+        }
+      ]
+    }
+  ]
+}
